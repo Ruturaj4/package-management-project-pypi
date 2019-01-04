@@ -1,1 +1,4 @@
 packages/
+*.json
+*.csv
+*.dot

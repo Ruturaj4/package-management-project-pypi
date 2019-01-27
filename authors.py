@@ -1,4 +1,5 @@
 import os, re
+import json
 
 def author():
     os.chdir("packages")
@@ -49,7 +50,9 @@ def author():
         except:
             pass
         os.chdir("../")
-    print(main_dic)
+    #print(main_dic)
+    with open('author-pypi.json', 'w') as fp:
+        json.dump(main_dic, fp)
 
 def main():
     author()

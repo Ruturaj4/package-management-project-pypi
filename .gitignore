@@ -3,3 +3,5 @@ packages/
 *.csv
 *.dot
 nohup.out
+*.copy
+pack_info/

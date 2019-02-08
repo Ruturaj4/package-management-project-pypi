@@ -19,8 +19,10 @@ for key in dic:
     temp = []
     print(key)
     for k,v in dic.items():
+        # pick a key if the of the corresponding package
         if key in v:
             temp.append(k)
+    # Save the package as a kwy and values as the violating or targetted packages
     mydic[key] = temp
 
 print(len(mydic))
